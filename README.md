@@ -1,6 +1,6 @@
 # Ray tracer
 
-[CSC 330] 3D Computer Graphics final project
+[CSC305] 3D Computer Graphics final project
 
 April 12, 2015
 
@@ -36,7 +36,9 @@ Example output images:
 
 Materials - gold, green glass, aluminum, red plastic
 
-With antialiasing
+No antialiasing
+
+<hr />
 
 ![](results/demo_meshes3.png)
 
@@ -45,6 +47,8 @@ Teapot mesh (instanced twice) - chrome, glass
 Octahedron mesh - glass
 
 With antialiasing
+
+<hr />
 
 ![](results/ui.png)
 
