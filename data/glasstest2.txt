@@ -1,0 +1,50 @@
+SPHERES ( s1  6 )
+
+MESHES ( m1 octahedron.obj
+         floor square.obj )
+
+MATERIALS
+(
+g   0.8 1.0 0.8 0.01
+        0.9 0.9 0.9
+        35
+	0 1.49
+brass   0.45 0.29 0.04 1.0
+        0.85 0.9 0.3
+        100
+	1 0
+pink   0.95 0.4 0.2 1.0
+       0.2 0.2 0.2
+       10
+       0 0
+    )
+
+ambient 0.08 0.08 0.08
+
+lightsrc    50 10 20
+            0.53 0.53 0.5
+            
+lightsrc    -20 60 60
+            0.0 0.7 0.7
+
+lightsrc    0 40 40
+            0.1 0.1 0.06
+
+camera  0 0 -30
+
+sphere ( trans 30 0 0
+        trans 0 -8 51 ) s1 brass
+
+sphere ( trans 15 0 0
+        trans 0 -8 51 ) s1 brass
+
+sphere ( trans 2.3 0 0
+        trans 0 -8 51 ) s1 brass
+
+sphere ( trans 4 -8 18 ) s1 g
+
+mesh ( trans 0 -14 18
+       scale 100 1 100 ) floor pink
+
+mesh ( trans -5 -8 32
+       scale 6 6 6 ) m1 g

@@ -1,0 +1,24 @@
+water
+diffuse - light gray
+reflect - white
+glossiness - 1.0
+refract - 1.0
+index - 1.33
+
+shiny plastic
+diffuse -
+reflect - white
+glossiness - 0.9
+refract - 0.0
+
+glass
+diffuse - light gray
+reflect - darker light gray
+glossiness - 1.0
+refract - 1.0
+
+chrome
+diffuse - light gray
+reflect - white
+glossiness - 1.0
+refract - 0.0

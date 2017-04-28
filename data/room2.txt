@@ -1,0 +1,71 @@
+SPHERES ( s1 1 )
+
+MESHES ( wall square.obj 
+         pyramid octahedron.obj )
+
+MATERIALS
+(
+red     1 0.2 0.25 1.0
+        0.9 0.9 0.9
+        35
+	0 0
+pink    0.8 0.54 0.5 1.0
+        0.9 0.9 0.85
+        35
+	0 0
+gray    0.5 0.5 0.5 1.0
+        0.8 0.9 0.8
+        35
+	0 0
+blue    0.2 0.2 0.7 1.0
+        0.9 0.9 0.9
+        35
+	0 0
+mirror   0.1 0.1 0.1 1.0
+         1 1 1
+         100
+         1 0
+white    0.8 0.8 0.8 1.0
+         0.9 0.9 0.9
+         35
+         0 0
+)
+
+ambient 0.13 0.13 0.13
+
+camera  0 0 -35
+
+{ ( rot -5 15 0
+    trans 3.5 0 -2
+     )
+
+mesh ( trans 0 -5 5
+       scale 18 1 20) wall white
+mesh ( trans 0 10 5
+       scale 18 1 20) wall white
+mesh ( trans 0 0 5
+       rot 90 0 0
+       scale 20 20 20 ) wall pink
+       
+mesh ( trans -8 0 5
+       rot 0 0 90
+       scale 20 20 20 ) wall blue   
+       
+mesh ( trans 8 0 5
+       rot 0 0 90
+       scale 20 20 20 ) wall red  
+
+sphere ( trans 0 -3 -7 
+         scale 1.8 1 1
+         rot 0 78 0 ) s1 mirror
+
+mesh ( trans -2 -3.5 -9
+       rot 0 15 0 ) pyramid red
+
+}
+lightsrc -2 -6 1
+          0.3 0.0 0.3
+lightsrc 5.8 8 0.5
+          0.3 0.3 0.2
+lightsrc -2 0 -37
+         0.4 0.4 0.4

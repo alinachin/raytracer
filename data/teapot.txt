@@ -1,0 +1,32 @@
+SPHERES ( )
+
+MESHES ( stud octahedron.obj
+         teapot teapot.obj )
+
+MATERIALS
+(
+brass   0.45 0.29 0.04
+        0.9 0.9 0.9
+        35
+	0
+	0
+blue    0.2 0.29 0.45
+        0 0 0
+        1
+	0
+	0
+)
+
+ambient 0.08 0.08 0.08
+
+lightsrc    4 40 -20
+            0.43 0.43 0.4
+            
+lightsrc    -20 -10 5
+            0.2 0.2 0.2
+
+camera  0 0 -30
+
+mesh ( scale 0.05 0.05 0.05 ) teapot blue
+mesh ( trans 4 -4 15 
+       scale 5 5 5 ) stud brass
