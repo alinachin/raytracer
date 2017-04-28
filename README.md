@@ -2,6 +2,10 @@
 
 [CSC 330] 3D Computer Graphics final project
 
+April 12, 2015
+
+Alina Chin
+
 Requirements:
 
 - Qt 5.4
@@ -25,3 +29,23 @@ Features:
 -	partially transparent objects & coloured shadows
 -	jittered antialiasing
 -	rendering settings can be changed in UI
+
+Example output images:
+
+![](results/demo_materials.png)
+
+Materials - gold, green glass, aluminum, red plastic
+
+With antialiasing
+
+![](results/demo_meshes3.png)
+
+Teapot mesh (instanced twice) - chrome, glass
+
+Octahedron mesh - glass
+
+With antialiasing
+
+![](results/ui.png)
+
+The user interface
